@@ -13,33 +13,33 @@ In order to add a new member the user should :
 3. click on save ![image](https://user-images.githubusercontent.com/109157433/197546686-ac419b6f-0c6d-47b2-889b-ae415ce23a70.png)
 
 
-in order to see or edit member's details the user clicks on set details ![image](https://user-images.githubusercontent.com/109157433/197546777-f7298c1b-6094-4849-abd2-d7b61f7efda3.png)
+In order to see or edit member's details the user clicks on set details ![image](https://user-images.githubusercontent.com/109157433/197546777-f7298c1b-6094-4849-abd2-d7b61f7efda3.png)
 
-in order to save the changes the user clicks on save ![image](https://user-images.githubusercontent.com/109157433/197546892-0fee7b7c-8df8-4ff7-adbf-a39aa740778e.png)
+In order to save the changes the user clicks on save ![image](https://user-images.githubusercontent.com/109157433/197546892-0fee7b7c-8df8-4ff7-adbf-a39aa740778e.png)
 
-in order to delete a member the user clicks on delete button ![Uploading image.png…]()
+In order to delete a member the user clicks on delete button ![Uploading image.png…]()
 
 
 
-dependency:
+Dependency:
 1.npm 
 2.visual studio 
 3.visual studio code
 4.SQLSERVER
 
-in order to run the code
-.  run the DB:
+In order to run the code
+.  Run the DB:
 1. to open setTables
 2. select all the SQL queries
 3. click on EXECUTE ![image](https://user-images.githubusercontent.com/109157433/197522928-8e865528-1248-4342-83be-5e3348d8becf.png)
 
  
-. run the server:
+. Run the server:
 1. to open server folder
 2. to open server
 3. click on  this button ![image](https://user-images.githubusercontent.com/109157433/197522850-7f8f0e80-e766-46f3-a07f-33697f58850e.png)
 
-.run the client:
+.Run the client:
 1. open my app by VISUAL STUDIO CODE
 2. open a new TERMINAL ![image](https://user-images.githubusercontent.com/109157433/197523627-9b022c76-7dc4-4654-9784-3cfada4f2120.png)
 3. run npm start
