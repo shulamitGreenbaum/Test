@@ -2,16 +2,16 @@
    
 <table *ngFor ="let i of allMembers">
    <tr>
-    <td>id: {{i.Id}}
+    <td class="tdTable">id: {{i.Id}}
     </td>
-    <td>first name: {{i.FirstName}}
+    <td class="tdTable">first name: {{i.FirstName}}
     </td>
-    <td>last name: {{i.LastName}}
+    <td class="tdTable">last name: {{i.LastName}}
     </td>
-    <td>
+    <td class="tdTable">
         <a  [routerLink]="['/app-see-member', i.Id]" >see details</a>
     </td>
-    <td>
+    <td class="tdTable">
         <input type="button" value="delete" (click)="delete(i.Id)" class="btn">
     </td>
    </tr>

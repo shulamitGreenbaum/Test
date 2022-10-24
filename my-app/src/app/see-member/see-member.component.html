@@ -1,80 +1,80 @@
 <div >
+ <label for="fName" class="rg"> first name</label>
+<br/>
 <input type="text" name="fName" class="regester_input" value={{member.FirstName}} #fName required>
 <br/>
-<label for="fName"> first name</label>
+<label for="lName" class="rg">last name</label>
 <br/>
 <input type="text" name="lName" class="regester_input" #lName value={{member.LastName}}  >
 <br/>
-<label for="lName">last name</label>
+<label for="id" class="rg"> id number</label>
 <br/>
 <input type="text" name="id" class="regester_input" value={{member.Id}} #id required maxlength="9"  >
 <br/>
-<label for="id"> id number</label>
+<label for="city" class="rg"> city</label>
 <br/>
 <input type="text" name="city" class="regester_input" value={{member.City}} #city >
 <br/>
-<label for="city"> city</label>
+<label for="street" class="rg">street</label>
 <br/>
 <input type="text" name="street" class="regester_input" value={{member.Steet}} #street >
 <br/>
-<label for="street">street</label>
+<label for="bildingnumber" class="rg"> bilding number</label>
 <br/>
 <input type="number" name="bildingnumber" class="regester_input" value={{member.Bildingnumber}} #bn >
 <br/>
-<label for="bildingnumber"> bilding number</label>
+<label for="birthday" class="rg"> birth day</label>
 <br/>
 <input type="date" name="birthday" class="regester_input" value={{member.Birthday}} #bd>
 <br/>
-<label for="birthday"> birth day</label>
+<label for="phone" class="rg"> phone number</label>
 <br/>
 <input type="text" name="phone" class="regester_input" value={{member.Phone}} #p required maxlength="9" >
 <br/>
-<label for="phone"> phone number</label>
+<label for="cellphone" class="rg"> cellphone number</label>
 <br/>
 <input type="text" name="cellphone" class="regester_input" value={{member.Cellphone}} #cp required maxlength="10" >
 <br/>
-<label for="cellphone"> cellphone number</label>
+<label for="AvaccinDate" class="rg"> date of first vaccin</label>
 <br/>
 <input type="date" name="AvaccinDate" class="regester_input" value={{member.AvaccinDate}} #av >
 <br/>
-<label for="AvaccinDate"> date of first vaccin</label>
+<label for="Atipevaccin" class="rg"> what company</label>
 <br/>
 <input type="text" name="Atipevaccin" class="regester_input" value={{member.Atipevaccin}} #at>
 <br/>
-<label for="Atipevaccin"> what company</label>
+<label for="BvaccinDate" class="rg"> date of second vaccin</label>
 <br/>
 <input type="date" name="BvaccinDate" class="regester_input" value={{member.BvaccindDate}} #bv>
 <br/>
-<label for="BvaccinDate"> date of second vaccin</label>
+<label for="Btipevaccin" class="rg"> what company</label>
 <br/>
 <input type="text" name="Btipevaccin" class="regester_input" value={{member.Btipevaccin}} #bt>
 <br/>
-<label for="Btipevaccin"> what company</label>
+<label for="CvaccinDate" class="rg"> date of third vaccin</label>
 <br/>
 <input type="date" name="CvaccinDate" #cv class="regester_input" value={{member.CvaccinDate}} >
 <br/>
-<label for="CvaccinDate"> date of third vaccin</label>
+<label for="Ctipevaccin" class="rg"> what company</label>
 <br/>
 <input type="text" name="Ctipevaccin"  #ct class="regester_input" value={{member.Ctipevaccin}} >
 <br/>
-<label for="Ctipevaccin"> what company</label>
+<label for="DvaccinDate" class="rg"> date of fourth vaccin</label>
 <br/>
-
 <input type="date" name="DvaccinDate" #dv class="regester_input" value={{member.DvaccinDate}} >
 <br/>
-<label for="DvaccinDate"> date of fourth vaccin</label>
+<label for="Dtipevaccin" class="rg"> what company</label>
 <br/>
 <input type="text" name="Dtipevaccin" #dt class="regester_input" value={{member.Dtipevaccin}} >
 <br/>
-<label for="Dtipevaccin"> what company</label>
+<label for="sickdate" class="rg"> sick date</label>
 <br/>
 <input type="date" name="sickdate" #sd class="regester_input" value={{member.Sickdate}} >
 <br/>
-<label for="sickdate"> sick date</label>
+<label for="recoverydate" class="rg"> recovery date</label>
 <br/>
 <input type="date" name="recoverydate" #rd class="regester_input" value={{member.Recoverydate}} >
 <br/>
-<label for="recoverydate"> recovery date</label>
-<br/>
-<input type="button" value="save changes" (click)="saveChanges(fName.value,lName.value,id.value,city.value,street.value,bn.value,p.value,cp.value,sd.value,rd.value,av.value,at.value,bv.value,cv.value,dv.value,bt.value,dt.value,ct.value)">
+
+<input #btn type="button" value="save changes" (click)="saveChanges(fName.value,lName.value,id.value,city.value,street.value,bn.value,p.value,cp.value,sd.value,rd.value,av.value,at.value,bv.value,cv.value,dv.value,bt.value,dt.value,ct.value)">
 </div>
