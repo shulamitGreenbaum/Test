@@ -2,18 +2,23 @@
 
 the propese of this web site is to give the manager an option to get the list of the members in the medicare and the information of the member and the covid vactions he got
 the manger will have also a way of adding a new member
-the manager can update details of the memmbers
+the manager can update details of the memmbers 
 
 in order to see the list of the members the user should click on the see button to see all members
-//add pic butten
-in order to add a new member the user should : 
-1. click on the add butten//add a pic
-2. add the write information
-3. click on save//add a pic
+![image](https://user-images.githubusercontent.com/109157433/197546333-1695d64d-43f1-4cf3-8a9c-2ebf12a2e359.png)
 
-in order to see or edit member's details user clicks on set details//add pic
-in order to save the changes the user clicks on save//add pic
-in order to delete a member the user clicks on delete butten//add pic
+in order to add a new member the user should : 
+1. click on the add butten ![image](https://user-images.githubusercontent.com/109157433/197546585-c5531b95-6f5c-4dae-a2e1-fa36b2aba786.png)
+2. add the write information
+3. click on save ![image](https://user-images.githubusercontent.com/109157433/197546686-ac419b6f-0c6d-47b2-889b-ae415ce23a70.png)
+
+
+in order to see or edit member's details user clicks on set details ![image](https://user-images.githubusercontent.com/109157433/197546777-f7298c1b-6094-4849-abd2-d7b61f7efda3.png)
+
+in order to save the changes the user clicks on save ![image](https://user-images.githubusercontent.com/109157433/197546892-0fee7b7c-8df8-4ff7-adbf-a39aa740778e.png)
+
+in order to delete a member the user clicks on delete butten ![Uploading image.png…]()
+
 
 
 dependency:
