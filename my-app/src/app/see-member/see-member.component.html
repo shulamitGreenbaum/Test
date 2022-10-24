@@ -1,0 +1,80 @@
+<div >
+<input type="text" name="fName" class="regester_input" value={{member.FirstName}} #fName required>
+<br/>
+<label for="fName"> first name</label>
+<br/>
+<input type="text" name="lName" class="regester_input" #lName value={{member.LastName}}  >
+<br/>
+<label for="lName">last name</label>
+<br/>
+<input type="text" name="id" class="regester_input" value={{member.Id}} #id required maxlength="9"  >
+<br/>
+<label for="id"> id number</label>
+<br/>
+<input type="text" name="city" class="regester_input" value={{member.City}} #city >
+<br/>
+<label for="city"> city</label>
+<br/>
+<input type="text" name="street" class="regester_input" value={{member.Steet}} #street >
+<br/>
+<label for="street">street</label>
+<br/>
+<input type="number" name="bildingnumber" class="regester_input" value={{member.Bildingnumber}} #bn >
+<br/>
+<label for="bildingnumber"> bilding number</label>
+<br/>
+<input type="date" name="birthday" class="regester_input" value={{member.Birthday}} #bd>
+<br/>
+<label for="birthday"> birth day</label>
+<br/>
+<input type="text" name="phone" class="regester_input" value={{member.Phone}} #p required maxlength="9" >
+<br/>
+<label for="phone"> phone number</label>
+<br/>
+<input type="text" name="cellphone" class="regester_input" value={{member.Cellphone}} #cp required maxlength="10" >
+<br/>
+<label for="cellphone"> cellphone number</label>
+<br/>
+<input type="date" name="AvaccinDate" class="regester_input" value={{member.AvaccinDate}} #av >
+<br/>
+<label for="AvaccinDate"> date of first vaccin</label>
+<br/>
+<input type="text" name="Atipevaccin" class="regester_input" value={{member.Atipevaccin}} #at>
+<br/>
+<label for="Atipevaccin"> what company</label>
+<br/>
+<input type="date" name="BvaccinDate" class="regester_input" value={{member.BvaccindDate}} #bv>
+<br/>
+<label for="BvaccinDate"> date of second vaccin</label>
+<br/>
+<input type="text" name="Btipevaccin" class="regester_input" value={{member.Btipevaccin}} #bt>
+<br/>
+<label for="Btipevaccin"> what company</label>
+<br/>
+<input type="date" name="CvaccinDate" #cv class="regester_input" value={{member.CvaccinDate}} >
+<br/>
+<label for="CvaccinDate"> date of third vaccin</label>
+<br/>
+<input type="text" name="Ctipevaccin"  #ct class="regester_input" value={{member.Ctipevaccin}} >
+<br/>
+<label for="Ctipevaccin"> what company</label>
+<br/>
+
+<input type="date" name="DvaccinDate" #dv class="regester_input" value={{member.DvaccinDate}} >
+<br/>
+<label for="DvaccinDate"> date of fourth vaccin</label>
+<br/>
+<input type="text" name="Dtipevaccin" #dt class="regester_input" value={{member.Dtipevaccin}} >
+<br/>
+<label for="Dtipevaccin"> what company</label>
+<br/>
+<input type="date" name="sickdate" #sd class="regester_input" value={{member.Sickdate}} >
+<br/>
+<label for="sickdate"> sick date</label>
+<br/>
+<input type="date" name="recoverydate" #rd class="regester_input" value={{member.Recoverydate}} >
+<br/>
+<label for="recoverydate"> recovery date</label>
+<br/>
+<input type="button" value="save changes" (click)="saveChanges(fName.value,lName.value,id.value,city.value,street.value,bn.value,p.value,cp.value,sd.value,rd.value,av.value,at.value,bv.value,cv.value,dv.value,bt.value,dt.value,ct.value)">
+</div>

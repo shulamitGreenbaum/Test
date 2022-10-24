@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="covidModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityContainer Name="CovidEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="Members11" EntityType="covidModel1.Members11" />
+  </EntityContainer>
+  <EntityType Name="Members11">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="TableID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="City" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Steet" Type="String" Nullable="false" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Bildingnumber" Type="Int32" Nullable="false" />
+    <Property Name="Birthday" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Phone" Type="String" Nullable="false" MaxLength="9" FixedLength="false" Unicode="false" />
+    <Property Name="Cellphone" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="AvaccinDate" Type="DateTime" Precision="0" />
+    <Property Name="Atipevaccin" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Sickdate" Type="DateTime" Precision="0" />
+    <Property Name="Recoverydate" Type="DateTime" Precision="0" />
+    <Property Name="BvaccindDate" Type="DateTime" Precision="0" />
+    <Property Name="CvaccinDate" Type="DateTime" Precision="0" />
+    <Property Name="DvaccinDate" Type="DateTime" Precision="0" />
+    <Property Name="Btipevaccin" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Dtipevaccin" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Ctipevaccin" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

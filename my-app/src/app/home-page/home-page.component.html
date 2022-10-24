@@ -1,0 +1,21 @@
+<div>
+   
+<table *ngFor ="let i of allMembers">
+   <tr>
+    <td>id: {{i.Id}}
+    </td>
+    <td>first name: {{i.FirstName}}
+    </td>
+    <td>last name: {{i.LastName}}
+    </td>
+    <td>
+        <a  [routerLink]="['/app-see-member', i.Id]" >see details</a>
+    </td>
+    <td>
+        <input type="button" value="delete" (click)="delete(i.Id)" class="btn">
+    </td>
+   </tr>
+</table>
+</div>
+<!-- <a routerLink="/app-add-member"> To add</a> -->
+<router-outlet></router-outlet>

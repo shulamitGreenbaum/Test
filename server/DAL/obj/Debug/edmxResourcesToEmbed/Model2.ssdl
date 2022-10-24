@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="covidModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Members11">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="TableID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Id" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Steet" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Bildingnumber" Type="int" Nullable="false" />
+    <Property Name="Birthday" Type="date" Nullable="false" />
+    <Property Name="Phone" Type="varchar" MaxLength="9" Nullable="false" />
+    <Property Name="Cellphone" Type="varchar" MaxLength="10" />
+    <Property Name="AvaccinDate" Type="date" />
+    <Property Name="Atipevaccin" Type="varchar" MaxLength="10" />
+    <Property Name="Sickdate" Type="date" />
+    <Property Name="Recoverydate" Type="date" />
+    <Property Name="BvaccindDate" Type="date" />
+    <Property Name="CvaccinDate" Type="date" />
+    <Property Name="DvaccinDate" Type="date" />
+    <Property Name="Btipevaccin" Type="varchar" MaxLength="10" />
+    <Property Name="Dtipevaccin" Type="varchar" MaxLength="10" />
+    <Property Name="Ctipevaccin" Type="varchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityContainer Name="covidModel1StoreContainer">
+    <EntitySet Name="Members11" EntityType="Self.Members11" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
